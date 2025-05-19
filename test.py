@@ -1,17 +1,15 @@
-# Exemple de secrets pour test Gitleaks
-
-# Clé AWS
 aws_access_key_id = "AKIAIOSFODNN7EXAMPLE"
-aws_secret_access_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+aws_secret_access_key = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY123456"
 
-# Clé API Google
+github_token = "ghp_16characterslongtoken1234567890"
+
 google_api_key = "AIzaSyD-FAKEKEY1234567890ABCDEFGHIJK"
 
-# Mot de passe codé en dur
-db_password = "MyP@ssword123"
+db_password = "password123"  # parfois ça passe pas, car trop générique
 
-# Clé privée simulée
+private_key = """
 -----BEGIN PRIVATE KEY-----
-MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKg...
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASC...
+mYlEwIDAQABAoIBAGmt2YNJ1FW4YghGQv...
 -----END PRIVATE KEY-----
-
+"""
