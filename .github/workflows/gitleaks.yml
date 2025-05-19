@@ -1,0 +1,20 @@
+name: Gitleaks Scan
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  gitleaks:
+    name: Run Gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        with:
+          config-path: .github/gitleaks.toml
